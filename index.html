@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나홀로 25일</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+        .image-container {
+            position: relative;
+            height: 100vh; /* 화면의 100% */
+            overflow-y: scroll; /* 스크롤 가능 */
+        }
+        
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            color: white; /* 텍스트 색상 */
+            z-index: 10; /* 이미지 위로 오도록 설정 */
+            background: rgba(255, 255, 255, 0); /* 반투명 배경 추가 */
+            overflow-y: scroll;
+            height: 100%; /* 텍스트가 이미지 영역에 고정되도록 */
+        }
+        .snowflake {
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -8px;
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(-10px);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+       
+
+       
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://ifh.cc/g/xVb3TS.jpg" alt="스크롤 가능한 이미지">
+        <div class="text-overlay">
+            <!-- 문장 36개 반복 -->
+             <p>나홀로 25일_마지막 달 연말 특선 영화처럼 감상하는 25일 아카이브</p>
+             <br><br>
+            <p>220125_성신여대 끝. 수고했다 나 자신! 이젠 하고싶은 일을 하면서 살길 바래.</p> 
+            <p>220225_명도 공부를 위해 글레이징을 해보자. 밤 되니까 배고파.</p>
+            <p>220325_짱수랑 구찌 아키타입 전시회 + 학교가서 제작기초</p>
+            <p>220425_스터디 시간이 조금 단축된 것 같다. + 정확도도. 전진~!</p>
+            <p>220525_드디어 제본한 거 제출했다. 개빡치고... 후련하다. 그릭요거트 밀크티크러시 맛있다.</p>
+            <p>220626_공백</p>
+            <p>220725_벽화알바 갔는데 땡볕에 뒤질 뻔. 정말 오랜만에 일사병이 왔었다. 다이어트 참 힘들다. 근력운동은 재밌다.</p>
+            <P>220825_개강 전 지원이랑 홍대투어했다. 하... 성적 얘긴 참 머리아프다. 2학기 힘내고 등록금고지서 낼 마감인데 낼 보여주게 생김. 아... 혼날듯. 오늘 진짜 미친듯이 먹었다ㅠㅠ 운동도 안하고 ㄹㅇ</P>
+            <p>220925_헤이파파 나도예쁜공주로낳지 태어날때부터 저 왕관을 쓴 전장속의 이 독한x도 사실은 싸움이 싫단말이야 다 죽여야지뭐...소연씨 앨범내주세요</p>
+            <p>221025_어제 도서관에서 [심연]이라는 책을 빌려왔다. 가볍고 작고 번역체가 어색하지 않아서다. 매끄럽게 읽힌다. 번역서치고 그게 다다. [토성의 고리]도 읽어보고싶다.</p>
+            <p>221125_하...루카 크루거 다른 그림 보면서 면 다듬었다. 좀ㄱㅊ아짐</p>
+            <p>221225_감각 있는 것 같다.actually...</p>
+            <br>
+            <p>230125_코로나 확진됐다 풀린지 2일째...그림 슬럼프다. 완성작이 안 나와서인듯. 프로필을 그려보자. 아님 레이 마감치기.</p>
+            <p>230225_메가커피에서 초보로 알바하다가 개 혼나는 꿈.꿔서 기분이 ㅂㄹ였다. 근데 막상 베라 가니까 ㄱㅊ았음. 엣.ㅎㅎㅋ</p>
+            <p>230325_아빠가 데탑 사줄 것 같다. 최고!</p>
+            <p>230425_공백</p>
+            <p>230525_내가 워라밸을 진짜 못 챙기는구나 싶다. '쉰다'는 행위를 명확히 지정하고 쉴 땐 쉬고 놀 땐 놀고르 정해야 할 것 같은데 쉽지 않음.</p>
+            <p>230625_사장님 제발 알바생을 더 두세요 ㅠㅠ힘들다.</p>
+            <p>230725_공백</p>
+            <p>230825_공백</p>
+            <p>230925_공백</p>
+            <p>231025_공백</p>
+            <p>231125_공백...일기 좀 쓰자</p>
+            <p>231225_일기장을 갈아타서 여기에 잘 안 써. 맘에 드는 브랜드(네이키드런치)인데, 오래오래 노트 내주시면 좋겠다. 그림 연말정산 해야겠는데? 할일이 좀 있네.</p>
+            <br>
+            <p>240125_벌써 여행도 다 다녀왔다.시간이 왜 이리 빠른거야.인스타 구경하는데 규민이가 나랑 비슷한 경로로 도쿄를 여행함. 짱수나 지영이나 타국이 좋아도 거기 오래 살면 분명 외로울거다 이러는데 신기하다. 난 한 번도 외로울거라 생각해본 적은 없는데. 왜 그럴까 생각해봤는데 나는 딱히 장소 자체에 애정을 안 느껴서거나 내가 완전한 타지 경험이 없어서 일지도? 생각보다 일기를 열심히 쓰는 중이라 놀람. 작년 일기장 너무 텅텅이라 마음이 쓰였나. 아날로그의 맛은 좋다. 체크리스트 쓰고 일기에 옮겨 붙이는 거. 내일 창고 짐 옮겨올까. 4월? 5월에나 이사 간대. </p>
+            <p>240225_가을,강이랑 사주를 보았다.되게 캐해석 당하는 느낌으로 봄.미래는 모르는 일이지만 왠지 내가 가려는 방향으로 말을 해주셔서 웃겼음. 그냥 내가 리액션을 해놔서 거기서 뽑아 얘기해주시는 것 같기도 하고... 일단 처음부터 나는 경찰이나 군인 이런거 해야 한다고. 사람 통솔하고 대장노릇 하는 거 좋아해서. 명예를 중시하고 돈을 잘 쓴다고 했다. 화가 많고... 건강 잘 챙기라고. 친구들 것도 진짜 웃겼음. 진짜 본인들같은 거 나옴. 믿거나 말거나~</p>
+            <p>240325_어릴 땐 내가 굉장히 선 지향적이고 선성향인줄 알았다. 크고 나서 느낀건 나는 도덕적인게 아니고 눈치를 많이 보는 성격이었다는 걸 알게 됨. sdgs 수업 너무 듣기 싫다. 너무 거시적이고 표면적인... 눈앞의 이야기보다 더 먼차원의 이야기만 하는 것 같아서 솔직히 짜증났는ㄴ데 졸작 스토리 주제로는 나쁘진 않겠다. 싶은... 한국과 밀접한 얘기가 될 수는 없을까나.</p>
+            <p>240425_컨디</p>
+            <p><a href="https://drive.google.com/file/d/18VDoGZFdL85fK8jzV6lYgrc1FjL96FIL/view?usp=drive_link"
+                target="_blank" 
+                style="color: white; text-decoration: underline;" >240525_(이미지 첨부)</a></p>
+            <p><a href="https://drive.google.com/file/d/1cQ6Qv0fQDd0-vFjs0429OSJMecT3B1zk/view?usp=drive_link"
+                target="_blank" 
+    style="color: white; text-decoration: underline;">240625_과제하기가 너무 귀찮아 힘들다. 쉬고싶은데 오늘 안으로 뭔가 많이 해놔야 할 것 같아서 오늘 놀면 안 됨ㅠㅠ모델링을 하려고 해도 아트가 먼저 되어야 할 텐데. 이번 학기 평균 학점이 4.0이다. 와~ b쟁탈전일줄 알았는데. ux가 만점인데 잘못 주신 거 아닌가? 친구들이 개인과제를 많이 안 한걸까. 어쨌든 기획. 게임그래픽 관련 수업만 점수 잘 뜨면 된다.</a></p>
+            <p><a href="https://drive.google.com/file/d/157QCN2W7rqrj4YFscT5ORk8MmZDbztFG/view?usp=drive_link"
+                target="_blank" 
+    style="color: white; text-decoration: underline;">240725_(이미지 첨부)</a></p>
+            <p>240825_공백</p>
+            <p>240925_공백</p>
+            <p><a href="https://drive.google.com/file/d/11L5I98-b9N6RbEHoPqqaBQeJj5d2Zq4g/view?usp=drive_link"
+                target="_blank" 
+    style="color: white; text-decoration: underline;">241025_(이미지 첨부)</a></p>
+            <p>241125_맘대로 스탠딩 렌더링 잡을 수 있는 수준이 오면(빨리)내년엔 렌더링(라이팅환경광무드)반영하는 법을 익혔으면 하네</p>
+        </div>
+    </div>
+    
+    <script>
+        const body = document.querySelector("body");
+        const MIN_DURATION = 10;
+
+        const makeSnowFlake = () => {
+            const snowflake = document.createElement("div");
+            const delay = Math.random() * 10; // 눈송이 생성 딜레이
+            const initialOpacity = Math.random(); // 눈송이 초기 투명도
+            const duration = Math.random() * 20 + MIN_DURATION; // 눈송이 떨어지는 시간
+
+            snowflake.classList.add("snowflake");
+            snowflake.style.left = `${Math.random() * window.innerWidth}px`; // 화면의 랜덤 위치
+            snowflake.style.animationDelay = `${delay}s`; // 애니메이션 시작 딜레이
+            snowflake.style.opacity = initialOpacity;
+            snowflake.style.animation = `fall ${duration}s linear`;
+
+            body.appendChild(snowflake);
+
+            setTimeout(() => {
+                body.removeChild(snowflake);
+            }, (duration + delay) * 1000); // 눈송이 제거
+        };
+
+        // 일정 간격으로 눈송이를 생성
+        setInterval(makeSnowFlake, 500);
+    </script>
+</body>
+</html>
